@@ -27,13 +27,14 @@ gch()
 
 
 main(){
-	pl("Are you done yet? y/n");
-	gets(line);		/* get answer */
-	ctext=0;		/* assume no */
-	if((ch()=='Y')|(ch()=='y')){
-		pl("You said Yes.");
-		return 0;
+	while (1==1){
+		pl("Are you done yet? y/n");
+		gets(line);		/* get answer */
+		ctext=0;		/* assume no */
+		if((ch()=='Y')|(ch()=='y')){
+			pl("You said Yes.");
+			return 0;
+		}
+		pl("...");
 	}
-	pl("You said No.");
-	return 0;
 }
